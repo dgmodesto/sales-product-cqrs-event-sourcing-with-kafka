@@ -6,12 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Config\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\sdk\Sdk.Cqrs\Sdk.Cqrs.csproj" />
-  </ItemGroup>
-
 </Project>

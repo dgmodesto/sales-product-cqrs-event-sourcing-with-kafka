@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SaleProduct.Sdk", "SaleProduct.Sdk", "{B885F1B8-76A7-41BB-9AB0-6C827F2EA55B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sdk.Cqrs", "sdk\Sdk.Cqrs\Sdk.Cqrs.csproj", "{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,10 @@ Global
 		{25FE72AC-FEAA-4399-B498-127165F68800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25FE72AC-FEAA-4399-B498-127165F68800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25FE72AC-FEAA-4399-B498-127165F68800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{6D32D5FA-F2A2-4BA3-B06A-B599F3F9957E} = {E00DE6BD-533A-431E-8C11-BAA6EA6F02A1}
 		{A4186D00-8834-4D17-9AA3-415ED29005B0} = {E00DE6BD-533A-431E-8C11-BAA6EA6F02A1}
 		{25FE72AC-FEAA-4399-B498-127165F68800} = {E00DE6BD-533A-431E-8C11-BAA6EA6F02A1}
+		{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A} = {B885F1B8-76A7-41BB-9AB0-6C827F2EA55B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35283A2C-11C4-4387-9D7D-D9E8CBCC509A}
