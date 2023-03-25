@@ -23,6 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Query.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Query.Infrastructure", "src\SaleProduct.Query\SaleProduct.Query.Infrastructure\SaleProduct.Query.Infrastructure.csproj", "{25FE72AC-FEAA-4399-B498-127165F68800}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8984D89B-5518-40B4-B678-55FA9CA6115E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
