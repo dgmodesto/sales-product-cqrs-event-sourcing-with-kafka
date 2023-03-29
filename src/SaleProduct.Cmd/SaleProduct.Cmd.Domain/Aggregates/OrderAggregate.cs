@@ -66,5 +66,28 @@ public  class OrderAggregate : AggregateRoot
     }
 
 
+    public void AddItens(string description, double price)
+    {
+        if(!_active)
+        {
+            throw new InvalidOperationException("You cannot add a item to an inactive order!");
+        }
 
+        if(string.IsNullOrEmpty(description))
+        {
+            throw new InvalidOperationException($"The value of { nameof(description) } cannlt be null or empty. Provider a valid { nameof(description)}");
+        }
+
+        RaiseEvent(new ItemAddedEvent { 
+            Id = _id, 
+            Description = description, 
+            Price = price 
+        });
+    }
+    public void Apply(ItemAddedEvent @event)
+    {
+        _id = @event.Id;
+        _itens.Add(@event.Id, new Tuple<string, string>(@event.Description, @event.Price.ToString("N2")));
+    }
+    
 }
