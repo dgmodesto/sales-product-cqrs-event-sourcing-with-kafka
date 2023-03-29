@@ -9,6 +9,7 @@ public class ItemAddedEvent : BaseEvent
     }
 
     public Guid Id { get; set; }
+    public Guid ItemId { get; set; }
     public string Description { get; set; }
     public double Price { get; set; }
 }

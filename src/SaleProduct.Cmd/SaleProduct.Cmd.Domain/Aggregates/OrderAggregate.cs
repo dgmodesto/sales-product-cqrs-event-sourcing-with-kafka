@@ -80,6 +80,7 @@ public  class OrderAggregate : AggregateRoot
 
         RaiseEvent(new ItemAddedEvent { 
             Id = _id, 
+            ItemId = Guid.NewGuid(),
             Description = description, 
             Price = price 
         });
@@ -87,7 +88,24 @@ public  class OrderAggregate : AggregateRoot
     public void Apply(ItemAddedEvent @event)
     {
         _id = @event.Id;
-        _itens.Add(@event.Id, new Tuple<string, string>(@event.Description, @event.Price.ToString("N2")));
+        _itens.Add(@event.ItemId, new Tuple<string, string>(@event.Description, @event.Price.ToString("N2")));
     }
     
+    public void RemoveItem(Guid itemId, string vendor)
+    {
+        if (!_active)
+        {
+            throw new InvalidOperationException("You cannot remove a item to an inactive order!");
+        }
+
+        if(!_itens[itemId].Item2.Equals(vendor, StringComparison.CurrentCultureIgnoreCase) {
+            throw new InvalidOperationException(("You aren not allowed to remove a item that was create in another order"));
+        }
+
+        RaiseEvent(new RemoveItemEvent
+        {
+            Id = _id,
+            itemId = itemId,
+        });
+    }
 }
