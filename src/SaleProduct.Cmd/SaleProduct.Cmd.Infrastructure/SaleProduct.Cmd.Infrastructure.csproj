@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\sdk\Sdk.Cqrs\Sdk.Cqrs.csproj" />
+    <ProjectReference Include="..\SaleProduct.Cmd.Domain\SaleProduct.Cmd.Domain.csproj" />
   </ItemGroup>
 
 </Project>
