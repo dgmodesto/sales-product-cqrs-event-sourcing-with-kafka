@@ -4,7 +4,6 @@ using Sdk.Cqrs.Events;
 using Sdk.Cqrs.Exceptions;
 using Sdk.Cqrs.Infrastructure;
 using Sdk.Cqrs.Producers;
-using System.ComponentModel.DataAnnotations;
 
 namespace SaleProduct.Cmd.Infrastructure.Stores;
 
@@ -70,7 +69,6 @@ public class EventStore : IEventStore
 
             var topic = Environment.GetEnvironmentVariable("KAFKA_TOPIC");
             await _eventProducer.ProduceAsync(topic, @event);
-            S
         }
     }
 

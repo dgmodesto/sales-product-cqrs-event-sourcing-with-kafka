@@ -2,7 +2,7 @@
 
 public class AggregateNotFoundException : Exception
 {
-    public AggregateNotFoundException()
+    public AggregateNotFoundException(string messsage) : base(messsage)
     {
         
     }
