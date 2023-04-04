@@ -98,7 +98,7 @@ public class OrderAggregate : AggregateRoot
             throw new InvalidOperationException("You cannot remove a item to an inactive order!");
         }
 
-        if (!_itens[itemId].Item2.Equals(vendor, StringComparison.CurrentCultureIgnoreCase) {
+        if (!_itens[itemId].Item2.Equals(vendor, StringComparison.CurrentCultureIgnoreCase)) {
             throw new InvalidOperationException(("You aren not allowed to remove a item that was create in another order"));
         }
         int var = 0;
