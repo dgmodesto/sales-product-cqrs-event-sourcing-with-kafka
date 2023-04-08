@@ -1,4 +1,5 @@
 using Confluent.Kafka;
+using MongoDB.Bson.Serialization;
 using SaleProduct.Cmd.Api.Commands;
 using SaleProduct.Cmd.Domain.Aggregates;
 using SaleProduct.Cmd.Infrastructure.Config;
@@ -7,7 +8,9 @@ using SaleProduct.Cmd.Infrastructure.Handlers;
 using SaleProduct.Cmd.Infrastructure.Producers;
 using SaleProduct.Cmd.Infrastructure.Repositories;
 using SaleProduct.Cmd.Infrastructure.Stores;
+using SaleProduct.Common.Events;
 using Sdk.Cqrs.Domain;
+using Sdk.Cqrs.Events;
 using Sdk.Cqrs.Hanlders;
 using Sdk.Cqrs.Infrastructure;
 using Sdk.Cqrs.Producers;
@@ -15,6 +18,8 @@ using Sdk.Cqrs.Producers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+BsonClassMap.RegisterClassMap<BaseEvent>();
+BsonClassMap.RegisterClassMap<OrderCreatedEvent>();
 
 builder.Services.Configure<MongoDbConfig>(builder.Configuration.GetSection(nameof(MongoDbConfig)));
 builder.Services.Configure<ProducerConfig>(builder.Configuration.GetSection(nameof(ProducerConfig)));

@@ -5,7 +5,8 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "KAFKA_TOPIC": "salesProductOrderEvent"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7173;http://localhost:5299"
@@ -15,7 +16,8 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "KAFKA_TOPIC": "salesProductOrderEvent"
       }
     },
     "Docker": {

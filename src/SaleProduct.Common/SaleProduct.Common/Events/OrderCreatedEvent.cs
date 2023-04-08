@@ -8,7 +8,6 @@ public class OrderCreatedEvent : BaseEvent
     {
     }
 
-    public Guid Id { get; set; }
     public bool Active { get; set; }
     public string Vendor { get; set; }
     public string Description { get; set; }

@@ -1,8 +1,14 @@
-﻿namespace Sdk.Cqrs.Events;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Sdk.Cqrs.Events;
 
 public class EventModel
 {
-    public Guid Id { get; set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
+
     public DateTime TimeStamp { get; set; }
     public Guid AggregateIndentifier { get; set; }
     public string AggregateType { get; set; }

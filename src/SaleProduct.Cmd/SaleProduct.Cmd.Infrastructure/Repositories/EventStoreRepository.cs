@@ -13,7 +13,7 @@ public class EventStoreRepository : IEventStoreRepository
     public EventStoreRepository(IOptions<MongoDbConfig> config)
     {
         var mongoClient = new MongoClient(config.Value.ConnectionString);
-        var mongoDatabase = mongoClient.GetDatabase(config.Value.Collection);
+        var mongoDatabase = mongoClient.GetDatabase(config.Value.Database);
 
         _eventStoreCollection = mongoDatabase.GetCollection<EventModel>(config.Value.Collection);
     }
