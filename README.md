@@ -19,3 +19,65 @@ This repository is a lab to apply cqrs and event sourcing architect
 * Implement SaleProduct.Query.Cmd.Infrastructure
 * Implement SaleProduct.Query.Domain
 * Implement SaleProduct.Query.Api
+
+
+### Structure 
+
+- CQRS 
+	- Command
+		- Api 
+			- Commands 
+			- Controllers
+		- Domain
+			- Aggregates
+		- Infrastructure
+			- Config 
+			- Dispatchers
+			- Handlers 
+			- Producers
+			- Repositories 
+			- Stores
+	- query
+		- api 
+			- controllers
+			- dtos 
+			- queries
+		- domain 
+			- Entities 
+			- Repositories
+		- infraestructure
+			- consumers 
+			- converters
+			- dataAccess 
+			- dispatchers
+			- handlers 
+			- repositories
+	- commons library
+		- dtos
+		- events
+	- sdk cqrs
+		- commands 
+			- BaseCommand
+		- consumers
+			- IEventConsumer
+		- domain 
+			- AggregateRoot 
+			- IEventStoreRepository
+		- events 
+			- BaseEvent 
+			- EventModel
+		- exceptions 
+			- AggregateNotFoundException
+			ConcurrencyException
+		- handlers 
+			- IEventSourcingHandler
+		- infrastructure 
+			- ICommandDispatcher
+			- IEventStore 
+			- IQueryDispatcher
+		- messages 
+			- Message
+		- producers 
+			- IEventProducer
+		- queries
+			- BaseQuery

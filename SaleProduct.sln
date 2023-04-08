@@ -9,28 +9,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SaleProduct.Common", "SaleP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SaleProduct.Query", "SaleProduct.Query", "{E00DE6BD-533A-431E-8C11-BAA6EA6F02A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Cmd.Api", "src\SaleProduct.Cmd\SaleProduct.Cmd.Api\SaleProduct.Cmd.Api.csproj", "{E7C03874-48E0-4B86-B009-7087829C0EEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Cmd.Api", "src\SaleProduct.Cmd\SaleProduct.Cmd.Api\SaleProduct.Cmd.Api.csproj", "{E7C03874-48E0-4B86-B009-7087829C0EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Cmd.Domain", "src\SaleProduct.Cmd\SaleProduct.Cmd.Domain\SaleProduct.Cmd.Domain.csproj", "{F3B38808-6120-4F56-BE65-87B4A2607D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Cmd.Domain", "src\SaleProduct.Cmd\SaleProduct.Cmd.Domain\SaleProduct.Cmd.Domain.csproj", "{F3B38808-6120-4F56-BE65-87B4A2607D80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Cmd.Infrastructure", "src\SaleProduct.Cmd\SaleProduct.Cmd.Infrastructure\SaleProduct.Cmd.Infrastructure.csproj", "{613D59DB-3E02-486D-82AF-312E1DEFCC91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Cmd.Infrastructure", "src\SaleProduct.Cmd\SaleProduct.Cmd.Infrastructure\SaleProduct.Cmd.Infrastructure.csproj", "{613D59DB-3E02-486D-82AF-312E1DEFCC91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Common", "src\SaleProduct.Common\SaleProduct.Common\SaleProduct.Common.csproj", "{A366C674-2CA5-4B5B-B74C-24A1CBD34416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Common", "src\SaleProduct.Common\SaleProduct.Common\SaleProduct.Common.csproj", "{A366C674-2CA5-4B5B-B74C-24A1CBD34416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Query.Api", "src\SaleProduct.Query\SaleProduct.Query.Api\SaleProduct.Query.Api.csproj", "{6D32D5FA-F2A2-4BA3-B06A-B599F3F9957E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Query.Api", "src\SaleProduct.Query\SaleProduct.Query.Api\SaleProduct.Query.Api.csproj", "{6D32D5FA-F2A2-4BA3-B06A-B599F3F9957E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Query.Domain", "src\SaleProduct.Query\SaleProduct.Query.Domain\SaleProduct.Query.Domain.csproj", "{A4186D00-8834-4D17-9AA3-415ED29005B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Query.Domain", "src\SaleProduct.Query\SaleProduct.Query.Domain\SaleProduct.Query.Domain.csproj", "{A4186D00-8834-4D17-9AA3-415ED29005B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleProduct.Query.Infrastructure", "src\SaleProduct.Query\SaleProduct.Query.Infrastructure\SaleProduct.Query.Infrastructure.csproj", "{25FE72AC-FEAA-4399-B498-127165F68800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleProduct.Query.Infrastructure", "src\SaleProduct.Query\SaleProduct.Query.Infrastructure\SaleProduct.Query.Infrastructure.csproj", "{25FE72AC-FEAA-4399-B498-127165F68800}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8984D89B-5518-40B4-B678-55FA9CA6115E}"
 	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SaleProduct.Sdk", "SaleProduct.Sdk", "{B885F1B8-76A7-41BB-9AB0-6C827F2EA55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sdk.Cqrs", "sdk\Sdk.Cqrs\Sdk.Cqrs.csproj", "{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sdk.Cqrs", "sdk\Sdk.Cqrs\Sdk.Cqrs.csproj", "{6CE07945-DC25-4CD9-BFDA-4C17D6460F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
