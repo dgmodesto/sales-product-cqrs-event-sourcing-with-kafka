@@ -103,13 +103,13 @@ public class OrderAggregate : AggregateRoot
         }
         int var = 0;
 
-        RaiseEvent(new RemoveItemEvent
+        RaiseEvent(new ItemRemovedEvent
         {
             Id = _id,
             ItemId = itemId,
         });
     }
-    public void Apply(RemoveItemEvent @event)
+    public void Apply(ItemRemovedEvent @event)
     {
         _id = @event.Id;
         _itens.Remove(@event.ItemId);

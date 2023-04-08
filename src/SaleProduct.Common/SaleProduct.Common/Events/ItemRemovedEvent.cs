@@ -2,10 +2,10 @@
 
 namespace SaleProduct.Common.Events;
 
-public class RemoveItemEvent : BaseEvent
+public class ItemRemovedEvent : BaseEvent
 {
 
-    public RemoveItemEvent() : base(nameof(RemoveItemEvent))
+    public ItemRemovedEvent() : base(nameof(ItemRemovedEvent))
     {
     }
 
