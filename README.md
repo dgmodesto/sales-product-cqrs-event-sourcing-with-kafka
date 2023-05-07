@@ -68,7 +68,7 @@ This repository is a lab to apply cqrs and event sourcing architect
 			- EventModel
 		- exceptions 
 			- AggregateNotFoundException
-			ConcurrencyException
+			- ConcurrencyException
 		- handlers 
 			- IEventSourcingHandler
 		- infrastructure 
