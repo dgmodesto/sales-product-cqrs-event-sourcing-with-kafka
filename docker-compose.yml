@@ -99,7 +99,7 @@ services:
         - kafka
     entrypoint: [ '/bin/sh', '-c' ]
     networks:
-        - kafka_network
+        - kafka_network 
     command: |
         "
         # blocks until kafka is reachable

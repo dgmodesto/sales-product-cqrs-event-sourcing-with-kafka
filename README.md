@@ -37,7 +37,7 @@ This repository is a lab to apply cqrs and event sourcing architect
 			- Producers
 			- Repositories 
 			- Stores
-	- query
+	- Query
 		- api 
 			- controllers
 			- dtos 
@@ -52,10 +52,10 @@ This repository is a lab to apply cqrs and event sourcing architect
 			- dispatchers
 			- handlers 
 			- repositories
-	- commons library
+	- Commons library
 		- dtos
 		- events
-	- sdk cqrs
+	- SDK CQRS
 		- commands 
 			- BaseCommand
 		- consumers
