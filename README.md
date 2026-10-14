@@ -1,83 +1,41 @@
 # sales-product-cqrs-event-sourcing-with-kafka
-This repository is a lab to apply cqrs and event sourcing architect
 
+A lab applying the **CQRS** and **Event Sourcing** architectural patterns with **Kafka** and .NET.
 
-### Architecture
+## Architecture
 
-![This is an image](./assets/diagram-sales-product-cqrs-event-sourcing-with-kafka.drawio.png)
+![Architecture diagram](./assets/diagram-sales-product-cqrs-event-sourcing-with-kafka.drawio.png)
 
+## Status / To-do
 
-### Todo List 
+- [ ] `SaleProduct.Cmd.Infrastructure` — in progress
+- [ ] `SaleProduct.Cmd.Domain`
+- [ ] `SaleProduct.Cmd.Api`
+- [ ] `SaleProduct.Common`
+- [ ] `SaleProduct.Query.Infrastructure`
+- [ ] `SaleProduct.Query.Domain`
+- [ ] `SaleProduct.Query.Api`
 
-* Implement SaleProduct.Cmd.Infrastructure - In Progress
-* Implement SaleProduct.Cmd.Domain
-* Implement SaleProduct.Cmd.Api
+## Structure
 
-
-* Implement SaleProduct.Common
-
-* Implement SaleProduct.Query.Cmd.Infrastructure
-* Implement SaleProduct.Query.Domain
-* Implement SaleProduct.Query.Api
-
-
-### Structure 
-
-- CQRS 
-	- Command
-		- Api 
-			- Commands 
-			- Controllers
-		- Domain
-			- Aggregates
-		- Infrastructure
-			- Config 
-			- Dispatchers
-			- Handlers 
-			- Producers
-			- Repositories 
-			- Stores
-	- Query
-		- api 
-			- controllers
-			- dtos 
-			- queries
-		- domain 
-			- Entities 
-			- Repositories
-		- infraestructure
-			- consumers 
-			- converters
-			- dataAccess 
-			- dispatchers
-			- handlers 
-			- repositories
-	- Commons library
-		- dtos
-		- events
-	- SDK CQRS
-		- commands 
-			- BaseCommand
-		- consumers
-			- IEventConsumer
-		- domain 
-			- AggregateRoot 
-			- IEventStoreRepository
-		- events 
-			- BaseEvent 
-			- EventModel
-		- exceptions 
-			- AggregateNotFoundException
-			- ConcurrencyException
-		- handlers 
-			- IEventSourcingHandler
-		- infrastructure 
-			- ICommandDispatcher
-			- IEventStore 
-			- IQueryDispatcher
-		- messages 
-			- Message
-		- producers 
-			- IEventProducer
-		- queries
-			- BaseQuery
+- **CQRS**
+  - **Command**
+    - Api: Commands, Controllers
+    - Domain: Aggregates
+    - Infrastructure: Config, Dispatchers, Handlers, Producers, Repositories, Stores
+  - **Query**
+    - Api: Controllers, DTOs, Queries
+    - Domain: Entities, Repositories
+    - Infrastructure: Consumers, Converters, DataAccess, Dispatchers, Handlers, Repositories
+  - **Common library**: DTOs, Events
+  - **CQRS SDK**
+    - Commands: `BaseCommand`
+    - Consumers: `IEventConsumer`
+    - Domain: `AggregateRoot`, `IEventStoreRepository`
+    - Events: `BaseEvent`, `EventModel`
+    - Exceptions: `AggregateNotFoundException`, `ConcurrencyException`
+    - Handlers: `IEventSourcingHandler`
+    - Infrastructure: `ICommandDispatcher`, `IEventStore`, `IQueryDispatcher`
+    - Messages: `Message`
+    - Producers: `IEventProducer`
+    - Queries: `BaseQuery`
